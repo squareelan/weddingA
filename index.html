@@ -11,7 +11,7 @@
 <!--<base href="https://www.w3schools.com/" target="_blank">-->
 
 <style>
-body,h1,h2{font-family: "Raleway", sans-serif}
+body,h1,h2{font-family: "Raleway", sans-serif;}
 body, html {height: 100%}
 p {line-height: 2}
 .bgimg, .bgimg2 {
@@ -25,11 +25,25 @@ p {line-height: 2}
 .leftfloat {float:left}
 .weddingdetail {font-family: "NanumMyeongjo"}
 .bomsfont {font-family: "TheanoDidot-Regular"}
+img {max-width: 880px;}
+div.section-separator {width: 100%; max-width: 880px; height: 1px; border-top-width: 1px; border-bottom-style: dotted; border-bottom-color: black; margin-top: 20px; margin-bottom: 20px;}
 </style>
 
 
 <body  style="background-color:#f7dfdf">
 
+  
+  <!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+  <div class="w3-bar w3-white w3-center w3-padding-8 w3-opacity-min w3-hover-opacity-off">
+    <a href="#home" style="width:33%" class="w3-bar-item w3-button bomsfont">Home</a>
+<!--    <a href="#us" style="width:33%" class="w3-bar-item w3-button bomsfont">Yongjun & Bom</a>-->
+    <a href="#wedding" style="width:33%" class="w3-bar-item w3-button bomsfont">Wedding</a>
+    <a href="#registry" style="width:33%" class="w3-bar-item w3-button bomsfont">Registry</a>
+<!--    <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>-->
+  </div>
+</div>
+  
 <!-- Header / Home-->
 <!--
 <header class="w3-display-container w3-wide" id="home">
@@ -42,7 +56,7 @@ p {line-height: 2}
 </header>
 -->
 <!--<div class="w3-display-container w3-wide" id="home">-->
-<div class="w3-display-container w3-padding-32">
+<div class="w3-container w3-padding-32 w3-center" style="margin: 0 auto;">
   <h2 class="w3-center w3-text-grey" id="home">유용준 & 조봄</h2>
   <h1 class="w3-center w3-text-grey"><b>우리 결혼 합니다</b></h1>
   <h1 class="w3-center w3-text-grey"><b id="countdown"></b></h1>
@@ -52,21 +66,12 @@ p {line-height: 2}
   <!--  <h3 class="weddingtitlefont">Are getting married</h3>-->
     <h4><b>2017.04.02 &nbsp&nbsp 6:00 PM</b></h4>
     <h4>라움 마제스틱볼룸</h4>
+    <img src="assets/images/houston3.png" style="width:100%;margin-top:32px">
   </div>
-  <img src="assets/images/houston3.png" style="width:100%;margin-top:32px">
 <!--  <div class="bgimg"></div>-->
 </div>
 
-<!-- Navbar (sticky bottom) -->
-<div class="w3-bottom w3-hide-small">
-  <div class="w3-bar w3-white w3-center w3-padding-8 w3-opacity-min w3-hover-opacity-off">
-    <a href="#home" style="width:33%" class="w3-bar-item w3-button bomsfont">Home</a>
-<!--    <a href="#us" style="width:33%" class="w3-bar-item w3-button bomsfont">Yongjun & Bom</a>-->
-    <a href="#wedding" style="width:33%" class="w3-bar-item w3-button bomsfont">Wedding</a>
-    <a href="#registry" style="width:33%" class="w3-bar-item w3-button bomsfont">Registry</a>
-<!--    <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>-->
-  </div>
-</div>
+
 
 <!--
   <div class="w3-display-container bgimg2">
@@ -137,7 +142,7 @@ p {line-height: 2}
           </div>
         </div>
       </div>
-      <img class="w3-padding-16" src="assets/images/map.png" style="width:90%;">
+      <img class="w3-padding-16" src="assets/images/map.png" style="width:100%;">
 
       <!-- 추가 멘트 -->
       <div class="weddingdetail w3-padding-16 w3-text-grey">
@@ -149,11 +154,12 @@ p {line-height: 2}
 </div>
 
 <!-- Registry section -->
+
 <div class="w3-container w3-padding-32 w3-center" id="registry">
   <div class="w3-content">
     <h1 class="w3-text-grey bomsfont">WEDDING REGISTRY</h1>
     <div>
-      <a href="https://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?registryId=544335825&eventType=Wedding&pwsurl="><p>Go to Registry</p>
+      <a target="_blank" href="http://e.customeriomail.com/e/c/eyJlbWFpbF9pZCI6Ik1qUXdPRGc2RnJ6OEFtUUFBbk1BRkJoWXdhYTRBV1U2WlRnME5ETTJNR010TURSbVlTMHhNV1UzTFRneE56SXRaalU0TUdJM1lXRXpOVEJtT2pNNU16Y3dOd0E9IiwicG9zaXRpb24iOjAsImhyZWYiOiJodHRwczovL3JlZ2lzdHJ5LnRoZWtub3QuY29tL2plbm5pZmVyLWNoby15b25nanVuLXlvby1hcHJpbC0yMDE3LzE4NDIzODk0P2x0PVJlZ2lzdHJ5UHJvZmlsZSZhPTEwMDAwJnN0PVNoYXJlUmVnaXN0cnlFbWFpbCZzcz1FbWFpbFByb3ZpZGVyJnNwPVRleHRMaW5rJnN1PWh0dHBzJTNBJTJGJTJGcmVnaXN0cnkudGhla25vdC5jb20lMkZqZW5uaWZlci1jaG8teW9uZ2p1bi15b28tYXByaWwtMjAxNyUyRjE4NDIzODk0JTNGbHQlM0RSZWdpc3RyeVByb2ZpbGUlMjZzdCUzRFNlYXJjaFJlc3VsdHMlMjZzcyUzRFJlZ2lzdHJ5Q29sdW1uJTI2c3AlM0RUZXh0TGluayUyNl9yZWZfdmFsXyUzRGh0dHBzJTI1M0ElMjUyRiUyNTJGd3d3LnRoZWtub3QuY29tJTI1MkZyZWdpc3RyeSUyNTJGY291cGxlc2VhcmNoJTI1MjNmaXJzdE5hbWUlMjUzRHlvbmdqdW4lMjUyNmxhc3ROYW1lJTI1M0R5b28lMjUyNmV2ZW50TW9udGglMjUzRDQlMjUyNmV2ZW50WWVhciUyNTNEMjAxNyUyNTI2ZXZlbnRUeXBlJTI1M0RXZWRkaW5nJTI1MjZyZXNldCUyNTNEdHJ1ZSUyNTI2dHJhY2slMjUzRHRydWUlMjAifQ/c81b1c7bc16e953ae060f5ebb8f4e0df9%201191f7c6d404f91787eec9a3e044f06"><p>Go to Registry</p>
       </a>
     </div>
   </div>
