@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    
+
 <!--<base href="https://www.w3schools.com/" target="_blank">-->
 
 <style>
@@ -26,7 +26,7 @@ p {line-height: 2}
 .weddingdetail {font-family: "NanumMyeongjo"}
 .bomsfont {font-family: "TheanoDidot-Regular"}
 </style>
-  
+
 
 <body  style="background-color:#f7dfdf">
 
@@ -36,13 +36,13 @@ p {line-height: 2}
   <div class="w3-display-bottommiddle w3-text-light-grey w3-center">
     <h1 class="w3-xxxlarge weddingtitlefont">Yongjun & Bom</h1>
     <h2 class="weddingtitlefont">Are getting married</h2>
-    <h2 class="weddingtitlefont"><b>2017.04.02</b></h2>    
+    <h2 class="weddingtitlefont"><b>2017.04.02</b></h2>
   </div>
 
 </header>
 -->
 <!--<div class="w3-display-container w3-wide" id="home">-->
-<div class="w3-display-container w3-padding-32">  
+<div class="w3-display-container w3-padding-32">
   <h2 class="w3-center w3-text-grey" id="home">유용준 & 조봄</h2>
   <h1 class="w3-center w3-text-grey"><b>우리 결혼 합니다</b></h1>
   <h1 class="w3-center w3-text-grey"><b id="countdown"></b></h1>
@@ -56,7 +56,7 @@ p {line-height: 2}
   <img src="assets/images/houston3.png" style="width:100%;margin-top:32px">
 <!--  <div class="bgimg"></div>-->
 </div>
-  
+
 <!-- Navbar (sticky bottom) -->
 <div class="w3-bottom w3-hide-small">
   <div class="w3-bar w3-white w3-center w3-padding-8 w3-opacity-min w3-hover-opacity-off">
@@ -76,14 +76,14 @@ p {line-height: 2}
   </div>
 </div>
 -->
-  
+
 <!-- About / Yongjun And Bom -->
 <div class="w3-container w3-padding-32 weddingdetail w3-center" style="background-color:#f7e5e5" id="us">
   <div class="w3-content">
     <h1 class="w3-text-grey bomsfont">INVITATION</h1>
 <!--    <h1 class="w3-center w3-text-grey"><b>우리 결혼 합니다</b></h1>-->
     <img class="w3-round w3-grayscale-min" src="assets/images/wedding1.jpg" style="width:100%;margin:3px 0">
-    
+
     <p class="invitation" style="margin-top:32px;"><i>하나님의 사랑으로<br>
       만난 두 사람이 이제 새로운 가정을 이루는<br>
       언제나 아름답고 주위의 사랑을 나누는<br>
@@ -97,7 +97,7 @@ p {line-height: 2}
 
     <div class="w3-center">
       <p>조성태 · (故)김광희 의 장녀 봄</p>
-    </div>      
+    </div>
   </div>
 </div>
 
@@ -138,16 +138,16 @@ p {line-height: 2}
         </div>
       </div>
       <img class="w3-padding-16" src="assets/images/map.png" style="width:90%;">
-      
+
       <!-- 추가 멘트 -->
       <div class="weddingdetail w3-padding-16 w3-text-grey">
         <h6>축하 화환은 정중히 사양하겠습니다.<br>
           화환은 예식장 사정으로 전시하지 않습니다.</h6>
-      </div>      
+      </div>
     </div>
   </div>
 </div>
-  
+
 <!-- Registry section -->
 <div class="w3-container w3-padding-32 w3-center" id="registry">
   <div class="w3-content">
@@ -158,7 +158,7 @@ p {line-height: 2}
     </div>
   </div>
 </div>
-  
+
 <!-- RSVP section -->
 <!--
 <div class="w3-container w3-padding-64 w3-center w3-wide" id="rsvp">
@@ -185,7 +185,7 @@ p {line-height: 2}
 
         <!-- 인원수 -->
         <div class="btn-group" data-toggle="buttons">
-<!--      
+<!--
           <label class="btn btn-primary">
             <input type="radio" name="options" id="option1" autocomplete="off" checked> 1
           </label>
@@ -199,8 +199,8 @@ p {line-height: 2}
             <input type="radio" name="options" id="option3" autocomplete="off"> 4
           </label>
 -->
-        </div>   
-                
+        </div>
+
       </form>
       <p><i>Sincerely, Bom & Yongjun</i></p>
       <div class="w3-row">
@@ -214,14 +214,14 @@ p {line-height: 2}
     </div>
   </div>
 </div>
-  
+
 <!-- Footer -->
 <div class="w3-hide-small" style="margin-bottom:32px"> </div>
 
 </body>
-  
+
 <!-- jQuery -->
-<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery.min.js"></script>
 <!-- Firebase -->
 <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase-app.js"></script>
@@ -237,20 +237,20 @@ p {line-height: 2}
   };
   firebase.initializeApp(config);
   console.log("Initialized Firebase");
-  
+
   function writeGuestData(userId, name, extra, isAttending) {
     var group;
     var totalCount = 1;
     if (isAttending == true) {
-      group = 'attend/'  
+      group = 'attend/'
     } else {
       group = 'notAttend/'
     }
-    
+
     if (extra != '') {
       totalCount++;
     }
-    
+
     firebase.database().ref(group + userId).set({
       guestName: name,
       extraGuest: extra,
@@ -258,7 +258,7 @@ p {line-height: 2}
       total: totalCount
     });
   }
-  
+
   function generateUUID() {
     var d = new Date().getTime();
     var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
@@ -273,15 +273,15 @@ p {line-height: 2}
   function dismissRSVP() {
     // Disable pop up
     document.getElementById('id01').style.display='none';
-    
+
     // Clean input fields
     document.getElementById("mainGuestName").value = '';
     document.getElementById("additionalGuestName").value = '';
-    
+
     // Disable buttons again
     $('.enableOnFormFilled').prop('disabled', true);
   }
-  
+
   function going() {
     var name = document.getElementById("mainGuestName").value;
     var add = document.getElementById("additionalGuestName").value;
@@ -292,46 +292,43 @@ p {line-height: 2}
     // Update to firebase
     writeGuestData(generateUUID(), name, add, true);
   }
-  
+
   function notGoing() {
     var name = document.getElementById("mainGuestName").value;
     var add = document.getElementById("additionalGuestName").value;
-    
+
     dismissRSVP();
 
     console.log("Not going: " + name);
-    
+
     // Update to firebase
     writeGuestData(generateUUID(), name, add, false);
   }
-  
+
   $(function () {
       function rsvpFilled() {
-        var main = $('#mainGuestName').val();        
+        var main = $('#mainGuestName').val();
         return main != '';
       }
-    
+
       $('#mainGuestName').keyup(function () {
 //          if ($(this).val() == '' || $(this).val() == null) {
         if (!rsvpFilled()) {
           //Check to see if there is any text entered
           // If there is no text within the input ten disable the button
-          $('.enableOnFormFilled').prop('disabled', true);      
+          $('.enableOnFormFilled').prop('disabled', true);
         } else {
           //If there is text in the input, then enable the button
           $('.enableOnFormFilled').prop('disabled', false);
         }
       });
-  }); 
-</script>  
+  });
+</script>
 <script>
   // Set the date we're counting down to
   var countDownDate = new Date("April 2, 2017 00:00:00").getTime();
 
   var now = new Date().getTime();
-  
-  console.log(countDownDate)
-    console.log(now)
 
   // Find the distance between now an the count down date
   var distance = countDownDate - now;
